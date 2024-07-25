@@ -5,3 +5,4 @@
 .env
 env
 README.md
+server.py

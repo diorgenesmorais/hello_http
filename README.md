@@ -3,36 +3,43 @@
 > Testando uma function localmente e depois fazer o deploy no GCP
 
 - Criar o ambiente virtual
+
 ```sh
 python -m venv env
 ```
 
 - Ativar o ambiente (após ativar o ambiente, verá o nome do ambiente entre parênteses no início da linha de comando)
+
 ```sh
 source env/bin/activate
 ```
 
 - Desativar o ambiente
+
 ```sh
 deactivate
 ```
 
 - Registrar as dependências do projeto
+
 ```sh
 pip freeze > requirements.txt
 ```
 
 - Instalar as dependências
+
 ```sh
 pip install -r requirements.txt
 ```
 
 - Criar gitignore
+
 ```sh
 npx gitignore python
 ```
 
 - Fazer o deploy no GCP
+
 ```sh
 gcloud functions deploy fn-hello-http \
   --gen2 \
@@ -44,7 +51,7 @@ gcloud functions deploy fn-hello-http \
   --trigger-http \
 ```
 
-###### Authors
+## Authors
 
 [**Diorgenes Morais**](https://github.com/diorgenesmorais)
 
